@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+body {
+  background: #111 !important;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .container{
+  border: 4px solid #dd2476;
+} */
+.App{
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  padding: 200px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.main_card{
+  background-color: black;
   color: white;
+  border: 3px solid #dd2476;
+  width: 300px;
+  margin-bottom: 30px;
+}
+.id_main{
+  position: absolute;
+  top: 18px;
+}
+.About{
+  border: 1.5px solid #dd2476;
+  font-size: 30px;
+  width: 110px;
+  text-align: center;
+  border-radius: 8%;
+  transition-timing-function: ease-in-out;
+ 
+}
+.About:hover{
+  font-size: 0;
+  border: none;
+  width: 100%;
+}
+.About:hover::after{
+  content: attr(data-hover);
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 200;
+  
+}
+.button_visit{
+  color: white;
+  background-color: #111;
+  width: 80px;
+  margin-left: 160px;
+  border: 1.5px solid #dd2476;
+}
+.Divider{
+  
+  background-color: white;
+}
+.first{
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 70px;
+  width: 7%;
+  left: 50%;
+}
+.count{
+  border: 2px solid #6d61db;
+  padding: 10px;
+}
+.count:hover{
+  font-size: 0;
+  border: none;
+  width: 100%;
+}
+.count:hover::after{
+  content: attr(data-hover);
+  font-size: 40px;
+  line-height: 28px;
+  font-weight: 200;
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
